@@ -1,4 +1,4 @@
-# Road-Radiance-Modelling
+# Road-Radiance-Modeling
 Uses the inverse-square law to model the theoretical radiant impacts of roads. Potentially useful for modelling light and noise pollution as a result of road-related features (cars, streetlights).
 
 
