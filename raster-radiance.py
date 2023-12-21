@@ -66,7 +66,7 @@ def main():
 		total_impact_reshaped[x, y] = impact
 
 	# Very important to use the road raster's profile to ensure floating point values
-	with rasterio.open("CenAZ_road-radiance_voro4_pixel_multi.tif", 'w', **road_profile) as dst:
+	with rasterio.open("road-radiance.tif", 'w', **road_profile) as dst:
 		dst.write(total_impact_reshaped, 1)
 
 	print("Processing complete. Output file created.")
