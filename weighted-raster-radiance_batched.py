@@ -107,7 +107,7 @@ def main():
 			total_impact_reshaped[x, y] = impact
 
 		# Write final raster
-		with rasterio.open("half-road-radiance-vo20-cenAZ.tif", 'w', **road_profile) as dst:
+		with rasterio.open("weighted_road_radiance.tif", 'w', **road_profile) as dst:
 			dst.write(total_impact_reshaped, 1)
 		print("Processing complete. Output file created.")
 
